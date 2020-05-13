@@ -26,7 +26,6 @@ re_greeting.match("yo Rosa")
 my_names = set(['rosa', 'rose', 'chatty', 'chatbot', 'bot',
     'chatterbot'])
 curt_names = set(['hal', 'you', 'u'])
-rude_names = set(['69', 'bitch', '420', 'fag'])
 greeter_name = ''
 match = re_greeting.match(input('You: '))
 
@@ -36,5 +35,3 @@ if match:
         print("Rosa: Good one.")
     elif at_name.lower() in my_names:
         print("Rosa: Hi {}, How are you?".format(greeter_name))
-    elif at_name in rude_names:
-        print("Rosa: Fuck you.")
